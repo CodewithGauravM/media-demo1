@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+a{
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.3rem;
+    color: black;
+}
+#hero{
+    height: 100vh;
+    position: relative;
+
+}
+
+#hero video{
+    width: 100%;
+}
+#hero h1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#About{
+    height: 100vh;
+    display: flex;
+    margin: 8rem 0;
+}
+#About .right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#About .left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#About .left img{
+    width: 50%;
+}
+
+i{
+    display: none !important;
+}
+
+input, textarea{
+   width: 92%;
+   padding: 0.5rem;
+   margin: 0.4rem;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+  
+}
+.textarea{
+    /* height: 20rem; */
+}
+.container{
+    border: 1px solid;
+    width: 100vh;
+    border-radius: 0.8rem;
+    height: 17rem;
+    margin: 10%;
+}
+.container h1{
+    display: flex;
+    justify-content: center;
+}
+
+#card{
+display: flex;
+
+}
+#card .box{
+    border: 1px solid;
+    padding: 1rem;
+    margin: 1rem;
+}
+#Service h1{
+ display: flex;
+ justify-content: center;
+}
+
+/* mobile Screen */
+ @media screen and (max-width:426px) {
+    nav div{
+        display: none;
+    }
+
+    i{
+        display: flex !important;
+    }
+
+    #hero{
+        height: 100%;
+    }
+    #hero h1{
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, 0.389);
+        color: white;
+    }
+    #About{
+        height: 100%;
+        margin: 2rem 0;
+        flex-direction: column;
+    }
+    #About .left{
+        width: 100%;
+    }
+    #About .right{
+        width: 90%;
+        padding: 1rem;
+    }
+    #card{
+        flex-direction: column;
+    }
+    .container{
+        width: 40%;
+        margin: 3rem;
+    height: 17rem;
+    }
+    input, textarea{
+        width: 80%;
+    }
+ }
